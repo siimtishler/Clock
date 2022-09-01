@@ -1,0 +1,74 @@
+:root{
+    --start-seconds: 15;
+    --start-minutes:47;
+    --start-hours: 11;
+}
+body{
+    margin:0;
+}
+
+.clock-container{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+svg{
+    transform: rotate(270deg);
+    max-width: 350px;
+    max-height: 350px;
+}
+
+#center-circle{
+    stroke: rgb(0, 0, 0);
+    stroke-width: 0.3px;
+    fill: white;
+}
+
+#time-display{
+    font-weight: 700;
+    font-size: 20px;
+    font-family:monospace
+}
+
+#clock-outline{
+    fill:white;
+}
+
+.seierid{
+    stroke:black;
+    stroke-linecap: round;
+    transform: translate(50%,50%);
+}
+
+#seconds{
+    stroke:rgb(145, 8, 8);
+}
+
+
+#hours{
+    stroke-width: 2px;
+}
+
+.marks{
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke: rgb(0, 0, 0);
+    transform: translate(50%,50%);
+}
+
+.marks > line:nth-child(1){transform: rotate(30deg);}
+.marks > line:nth-child(2){transform: rotate(60deg);}
+.marks > line:nth-child(3){transform: rotate(90deg);}
+.marks > line:nth-child(4){transform: rotate(120deg);}
+.marks > line:nth-child(5){transform: rotate(150deg);}
+.marks > line:nth-child(6){transform: rotate(180deg);}
+.marks > line:nth-child(7){transform: rotate(210deg);}
+.marks > line:nth-child(8){transform: rotate(240deg);}
+.marks > line:nth-child(9){transform: rotate(270deg);}
+.marks > line:nth-child(10){transform: rotate(300deg);}
+.marks > line:nth-child(11){transform: rotate(330deg);}
+.marks > line:nth-child(12){transform: rotate(360deg);}
+.marks >line:nth-child(3n+3){stroke-width: 3px;}

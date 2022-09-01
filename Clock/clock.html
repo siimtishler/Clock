@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clock</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="clock.css">
+    </head>
+    <body>
+
+    <div class="clock-container">
+        <svg class = "clock" viewBox = "0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle id = "clock-outline" cx = "100" cy = "100" r = "90%"/>
+            <g class = "marks"> 
+                <line x1 = "78" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+                <line x1 = "75" y1 = "0" x2 = "82" y2 = "0"/>
+            </g>
+            <g class="seierid">
+                <line id="hours"x1="-3" y1 = "0" x2 = "48" y2="0"/>
+                <line id="minutes"x1="-5" y1 = "0" x2 = "58" y2="0"/>
+                <line id="seconds" x1="-7" y1 = "0" x2 = "65" y2="0"/>
+            </g>
+            <circle id = "center-circle" cx = "50%" cy = "50%" r = "0.7%"/>
+        </svg>
+        <p id="time-display"></p>
+    </div>
+    
+        <script src="clock.js" async defer></script>
+    </body>
+</html>
